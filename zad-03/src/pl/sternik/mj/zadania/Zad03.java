@@ -1,8 +1,13 @@
 package pl.sternik.mj.zadania;
 
+import com.sun.source.util.SourcePositions;
+
+import java.sql.SQLOutput;
+
 public class Zad03 {
     public static void main(String[] args) {
         System.out.println("Witaj");
         System.out.println("Sternik");
+        System.out.println("Elo");
     }
 }
