@@ -1,5 +1,7 @@
 package pl.sternik.mj.zadania.z05;
 
+import java.util.Date;
+
 public class Z05 {
 
     public static void main(String[] args) {
@@ -13,6 +15,11 @@ public class Z05 {
 
         tmp = zrobPetleWhile(tablica);
 //        System.out.println(tmp);
+
+
+        Date h = new Date();
+        h.toGMTString();
+
 
     }
 
@@ -28,11 +35,12 @@ public class Z05 {
     static String zrobPetleWhile(String[] tablica) {
         int i;
         i = 0;
+        String tmp = "Petla WHILE";
         while (i <= tablica.length - 1) {
-            System.out.println(tablica[i]);
+            tmp = tmp + "\n" + tablica[i];
             i++;
         }
-        return "";
+        return tmp;
     }
 
     static String zrobPetleForEach(String[] tablica) {
@@ -42,7 +50,7 @@ public class Z05 {
         for (String string : tablica) {
             tmp = tmp + "\n" + string;
         }
-        System.out.println(tmp);
+
         return tmp;
     }
 }

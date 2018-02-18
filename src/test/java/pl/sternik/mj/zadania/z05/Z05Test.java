@@ -27,9 +27,21 @@ public class Z05Test {
 
     @Test
     public void zrobPetleWhile() {
+        String[] tablica = {"Raz", "Dwa", "Trzy", "Cztery"};
+        String expected = "Petla WHILE\nRaz\nDwa\nTrzy\nCztery";
+
+        String actual = Z05.zrobPetleWhile(tablica);
+
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
     public void zrobPetleForEach() {
+        String[] tablica = {"Raz", "Dwa", "Trzy", "Cztery"};
+        String expected = "Petla FOREach\nRaz\nDwa\nTrzy\nCztery";
+
+        String actual = Z05.zrobPetleForEach(tablica);
+
+        assertThat(actual).isEqualTo(expected);
     }
 }
